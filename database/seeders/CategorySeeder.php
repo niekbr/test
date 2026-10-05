@@ -12,11 +12,11 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        if (Category::query()->exists()) {
+        if (Category::query()->count() < 10) {
             return;
         }
 
-        foreach (range(1, 5) as $ignored) {
+        foreach (range(1, 10) as $ignored) {
             Category::query()->create();
         }
     }
