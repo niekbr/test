@@ -12,7 +12,7 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        if (Category::query()->count() < 10) {
+        if (Category::query()->count() >= 10) {
             return;
         }
 
