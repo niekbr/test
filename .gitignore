@@ -30,3 +30,6 @@ AGENTS.md
 .claude
 .mcp.json
 CLAUDE.md
+.agents
+boost.json
+opencode.json
